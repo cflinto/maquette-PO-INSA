@@ -1,8 +1,10 @@
 .main_container
 {
-	border: 1px solid black;
-	width: 80%;
-	margin-left: 10%;
+	/*border: 1px solid black;*/
+	width: 400%;
+	margin: 0 auto;
+	box-shadow: 1px 1px 12px #555;
+	
 }
 
 .main_container h1
@@ -15,6 +17,7 @@
 	background-color: #E42618;
 	padding: 20px;
 	text-align: center;
+	box-shadow: 0px 0px 10px #941608;
 }
 
 .main_menu li
@@ -36,8 +39,47 @@
 	text-align: center;
 }
 @font-face {
-  font-family: "Prata";
-  font-style: normal;
-  font-weight: 400;
-  src: url("./Prata.woff2") format("woff2");
+	font-family: "Prata";
+	font-style: normal;
+	font-weight: 400;
+	src: url("./Prata.woff2") format("woff2");
+}
+
+.overall_container
+{
+	width: 100%;
+	display:flex;
+	
+}
+
+.left_gradient
+{
+	float: left;
+	width: 100%;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f2f2+0,dddddd+100 */
+	background: #f2f2f2; /* Old browsers */
+	background: -moz-linear-gradient(left, #f2f2f2 0%, #dddddd 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #f2f2f2 0%,#dddddd 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #f2f2f2 0%,#dddddd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#dddddd',GradientType=1 ); /* IE6-9 */
+}
+
+.right_gradient
+{
+	float: right;
+	width: 100%;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dddddd+0,f2f2f2+100 */
+	background: #dddddd; /* Old browsers */
+	background: -moz-linear-gradient(left, #dddddd 0%, #f2f2f2 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #dddddd 0%,#f2f2f2 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #dddddd 0%,#f2f2f2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#f2f2f2',GradientType=1 ); /* IE6-9 */
+}
+
+body {
+
+margin :0px;
+min-height:2000px;
 }
