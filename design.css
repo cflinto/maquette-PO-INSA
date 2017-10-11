@@ -1,0 +1,43 @@
+.main_container
+{
+	border: 1px solid black;
+	width: 80%;
+	margin-left: 10%;
+}
+
+.main_container h1
+{
+	text-align: center;
+}
+
+.main_menu
+{
+	background-color: #E42618;
+	padding: 20px;
+	text-align: center;
+}
+
+.main_menu li
+{
+	font-family: "Prata",serif;
+	display: inline-block;
+	margin-right: 30px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.quote
+{
+	font-family: "Prata", sans-serif;
+	margin-right: 30px;
+	color: grey;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+@font-face {
+  font-family: "Prata";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./Prata.woff2") format("woff2");
+}
