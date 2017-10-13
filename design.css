@@ -2,14 +2,36 @@
 {
 	/*border: 1px solid black;*/
 	width: 400%;
+	position : relative;
 	margin: 0 auto;
 	box-shadow: 1px 1px 12px #555;
+	padding : 10px;
 	
+}
+
+@media (max-width : 1000px)
+{
+	.main_container
+	{
+		
+		width : 10000%;
+		
+
+	
+	}
 }
 
 .main_container h1
 {
 	text-align: center;
+	font-family : "AllerLight";
+	
+}
+
+.timer
+{
+	text-align:center;
+	font-family : "AllerLight";
 }
 
 .main_menu
@@ -17,6 +39,7 @@
 	background-color: #E42618;
 	padding: 20px;
 	text-align: center;
+	
 	box-shadow: 0px 0px 10px #941608;
 }
 
@@ -27,14 +50,28 @@
 	margin-right: 30px;
 	font-size: 20px;
 	font-weight: bold;
+	opacity : 0.8;
+	padding : 5px;
+	border : solid 1px #E42618;
+	color : white;
+}
+
+.main_menu li:hover
+{
+	color : white;
+	opacity : 1;
+	border : solid 1px white;
+	border-radius: 10px;
+	padding : 5px;
 }
 
 .quote
 {
 	font-family: "Prata", sans-serif;
 	margin-right: 30px;
+	margin : 20px;
 	color: grey;
-	font-size: 20px;
+	font-size: 30px;
 	font-weight: bold;
 	text-align: center;
 }
@@ -45,11 +82,20 @@
 	src: url("./Prata.woff2") format("woff2");
 }
 
+@font-face{
+	font-family: "AllerLight";
+	font-style:normal;
+	font-weight:400;
+	src: url("./Aller_Lt.ttf");
+}
+
 .overall_container
 {
 	width: 100%;
 	display:flex;
-	
+	position : relative;
+	min-height : 2000px;	
+
 }
 
 .left_gradient
@@ -78,8 +124,18 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#f2f2f2',GradientType=1 ); /* IE6-9 */
 }
 
-body {
+body 
+{
 
 margin :0px;
-min-height:2000px;
+
+}
+
+.logo
+{
+height : auto;
+position:relative;
+max-width:100%;
+max-height :180px;
+
 }
