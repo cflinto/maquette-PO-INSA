@@ -6,7 +6,8 @@
 	margin: 0 auto;
 	box-shadow: 1px 1px 12px #555;
 	padding-top : 10px;
-	
+	background-image: url("./asanoha-400px.png");
+	background-repeat: repeat;
 }
 
 @media (max-width : 1000px)
@@ -24,14 +25,15 @@
 .main_container h1
 {
 	text-align: center;
-	font-family : "AllerLight";
+	font-family : "LatoBlack";
+	font-size : 50px;
 	
 }
 
 .timer
 {
 	text-align:center;
-	font-family : "AllerLight";
+	font-family : "LatoLight";
 }
 
 .main_menu
@@ -44,7 +46,7 @@
 
 .main_menu li
 {
-	font-family: "Prata",serif;
+	font-family: "LatoHairline";
 	display: inline-block;
 	margin-right: 30px;
 	font-size: 20px;
@@ -72,7 +74,7 @@
 
 .quote
 {
-	font-family: "Prata", sans-serif;
+	font-family: "LatoHairline";
 	margin-right: 30px;
 	margin : 20px;
 	color: grey;
@@ -93,6 +95,32 @@
 	font-weight:400;
 	src: url("./Aller_Lt.ttf");
 }
+
+@font-face{
+	font-family: "LatoHairline";
+	font-style:normal;
+	font-weight:400;
+	src: url("./Lato-Hairline.ttf");
+}
+
+@font-face{
+	font-family: "LatoBlack";
+	font-style:normal;
+	font-weight:400;
+	src: url("./Lato-Bold.ttf");
+}
+
+@font-face{
+	font-family: "LatoLight";
+	font-style:normal;
+	font-weight:400;
+	src: url("./Lato-Light.ttf");
+}
+
+
+
+
+
 
 .overall_container
 {
@@ -156,25 +184,29 @@ max-height :180px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 	
 }
 
 .INSA {
-	background-color : black;
-	height : 400px;
-	padding-left : 10px;
+	background-image: url("./footer_lodyas.png");
+	background-repeat: repeat;
+	height : 800px;
+	padding : 10px;
+	padding-left: 20px;
 	
 }
 
 .INSA h2 {
 	color : white;
 	font-size : 30px;
+	margin:0px;
+	font-family: "LatoHairline"
 }
 
 .programme {
 	background-color : grey;
-	height : 400px;
+	height : 500px;
 }
 
 .acces {
@@ -187,4 +219,8 @@ max-height :180px;
 	height : 500px;
 }
 
+
+#counter{
+	font-size: 50px;
+}
 
