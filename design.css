@@ -5,7 +5,7 @@
 	position : relative;
 	margin: 0 auto;
 	box-shadow: 1px 1px 12px #555;
-	padding : 10px;
+	padding-top : 10px;
 	
 }
 
@@ -39,7 +39,6 @@
 	background-color: #E42618;
 	padding: 20px;
 	text-align: center;
-	
 	box-shadow: 0px 0px 10px #941608;
 }
 
@@ -63,6 +62,12 @@
 	border : solid 1px white;
 	border-radius: 10px;
 	padding : 5px;
+}
+
+.bouton_menu
+{
+	text-decoration : none;
+	color : white;
 }
 
 .quote
@@ -152,4 +157,34 @@ max-height :180px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+	
 }
+
+.INSA {
+	background-color : black;
+	height : 400px;
+	padding-left : 10px;
+	
+}
+
+.INSA h2 {
+	color : white;
+	font-size : 30px;
+}
+
+.programme {
+	background-color : grey;
+	height : 400px;
+}
+
+.acces {
+	background-color : black;
+	height : 500px;
+}
+
+.contact {
+	background-color : black;
+	height : 500px;
+}
+
+
