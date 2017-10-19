@@ -139,3 +139,17 @@ max-width:100%;
 max-height :180px;
 
 }
+
+.parallax {
+    /* The image used */
+    background-image: url("UCaen-Etudiants-amphi.jpg");
+
+    /* Set a specific height */
+    height: 350px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
