@@ -16,7 +16,7 @@
 			<div class="div_counter"><p class="timer"> Temps avant l'ouverture : <br/><span id="counter">X</span> </p></div>
 			<div class="main_menu" >
 				<ul>
-					<li><a href ="#presentation" class="bouton_menu">Presentation</a></li>
+					<li><a href ="#presentation" class="bouton_menu">Présentation</a></li>
 					<li><a href="#programme" class="bouton_menu">Programme</a></li>
 					<li><a href="#acces" class="bouton_menu">Accès</a></li>
 					<li><a href ="#INSA" class="bouton_menu">INSA</a></li>
@@ -31,7 +31,9 @@
 
 			<!-------------------- PRESENTATION ---------------------------------->
 			<div class = "presentation" id="presentation">
-				<h2>Presentation</h2>				
+				<h2>Présentation</h2>
+				<p>L'INSA Toulouse ouvre ses portes le samedi 27 janvier 2018 de 9h à 16h en continu.</p>
+				<p>Visites de départements, logement étudiants, campus. Rencontres avec des étudiants, enseignants des 8 spécialités, service scolarité etc...</p>				
 					
 			</div>
 
@@ -40,11 +42,31 @@
 			<div class="programme" id ="programme">
 				<h2>Planning de la journée</h2>
 				<p>Le planning de cette journée sera très chargé ! bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
-				<a href="./programme2017_web.pdf">-> Télécharger le planning</a>
+				<a href="./programme2017_web.pdf">Télécharger le planning</a>
 				<p>Venez nombreux ! bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
 			</div>
 			
+
+			<!-------------------- ACCES --------------------------------------->
 			<div class="acces" id ="acces">
+				<h2>Acces</h2>
+				<div id="map">
+					
+					<script>
+						function initMap() {
+						var insa = {lat: 43.5700699, lng: 1.467344};
+						var map = new google.maps.Map(document.getElementById('map'), {
+						  zoom:14,
+						  center: insa
+						});
+						var marker = new google.maps.Marker({
+						  position: insa,
+						  map: map
+						});
+						}
+					</script>
+		
+				</div>
 			</div>
 			
 
@@ -77,7 +99,7 @@
 				<p>Cela a permis de confirmer que les ingénieurs INSA :
 
 					<ul>
-						<li>ont une formation scientifique solide et pratique</li>
+						<li type="circle">ont une formation scientifique solide et pratique</li>
 						<li>sont aptes à communiquer</li>
 						<li>reçoivent des enseignements à l’interface de plusieurs disciplines</li>
 						<li>travaillent aisément en équipe.</li>
@@ -135,5 +157,8 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
 <script src="countdown.js" ></script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASWdwfdBWRtH1Klz04Sl_WDmeo2ltmhqI&callback=initMap"></script>
+
 
 </body>
