@@ -13,35 +13,61 @@
 
 			
 			<h1>Journée portes ouvertes<br> 27 Janvier 2018</h1>
-			<div class="div_counter"><p class="timer"> Temps avant l'ouverture : <br/><span id="counter"></span> </p></div>
+			<div class="div_counter"><p class="timer"> Temps avant l'ouverture : <br/><span id="counter">X</span> </p></div>
 			<div class="main_menu" >
 				<ul>
-					<li><a href ="#INSA" class="bouton_menu">L'INSA</a></li>
+					<li><a href ="#presentation" class="bouton_menu">Presentation</a></li>
 					<li><a href="#programme" class="bouton_menu">Programme</a></li>
 					<li><a href="#acces" class="bouton_menu">Accès</a></li>
+					<li><a href ="#INSA" class="bouton_menu">INSA</a></li>
 					<li><a href="#contact" class="bouton_menu">Contact</a></li>
 				</ul>
 			</div>
 			<div class="quote" >Ingénieur et pas seulement ! </div>
 			<div class = "parallax"></div>
 			
+
+
+
+			<!-------------------- PRESENTATION ---------------------------------->
+			<div class = "presentation" id="presentation">
+				<h2>Presentation</h2>				
+					
+			</div>
+
+
+			<!-------------------- PROGRAMME ---------------------------------->
+			<div class="programme" id ="programme">
+				<h2>Planning de la journée</h2>
+				<p>Le planning de cette journée sera très chargé ! bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
+				<a href="./programme2017_web.pdf">-> Télécharger le planning</a>
+				<p>Venez nombreux ! bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
+			</div>
+			
+			<div class="acces" id ="acces">
+			</div>
+			
+
+
+			<!-------------------- INSA ---------------------------------->
 			<div class="INSA" id="INSA">
 				<h2>Une école pluridisciplinaire</h2>
 				<div class="slider-holder">
-					<span id="slider-image-1"></span>
-					<span id="slider-image-2"></span>
-					<span id="slider-image-3"></span>
-					<div class="image-holder">
-						<img src="1.jpg" class="slider-image" />
-						<img src="2.jpg" class="slider-image" />
-						<img src="3.jpg" class="slider-image" />
-					</div>
-					<div class="button-holder">
-						<a href="#slider-image-1" class="slider-change"></a>
-						<a href="#slider-image-2" class="slider-change"></a>
-						<a href="#slider-image-3" class="slider-change"></a>
-					</div>
-				</div>
+                    <span id="slider-image-1"></span>
+                    <span id="slider-image-2"></span>
+                    <span id="slider-image-3"></span>
+                    <div class="image-holder" id="image-holder">
+                        <img src="1.jpg" class="slider-image" />
+                        <img src="2.jpg" class="slider-image" />
+                        <img src="3.jpg" class="slider-image" />
+                    </div>
+                    <div class="button-holder">
+                        <span id="slider-change-1" class="slider-change" onclick="set_image(1);"></span>
+                        <span id="slider-change-2" class="slider-change" onclick="set_image(2);"></span>
+                        <span id="slider-change-3" class="slider-change" onclick="set_image(3);"></span>
+                    </div>
+                </div>
+
 				<h3>Un cursus ingénieur en phase avec son temps</h3>
 
 				<p>L’INSA Toulouse a travaillé en étroite col­laboration avec des acteurs du monde industriel pour proposer un modèle de formation en adéquation avec les attentes des entreprises.</p>
@@ -72,34 +98,32 @@
 				<p>Dès le début de sa scolarité, l’étudiant est également accompagné pour construire pas à pas un Parcours Professionnel Individualisé (PPI), en cohérence avec ses centres d’intérêt et ses capacités.</p>
 			</div>
 
-			<div class="programme" id ="programme">
-				<h2>Planning de la journée</h2>
-				<p>Le planning de cette journée sera très chargé ! bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
-				<a href="./programme2017_web.pdf">-> Télécharger le planning</a>
-				<p>Venez nombreux ! bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
-			</div>
-			
-			<div class="acces" id ="acces">
-			</div>
-			
+
+
+			<!-------------------- CONTACT ---------------------------------->	
 			<div class="contact" id ="contact">
 				<h2>Nous contacter</h2>
 				<div class="div_formulaire">			
-					<form action ="./formulaire.php" method="post" class="formulaire" >
+					<form onsubmit ="alert('Fonctionnalité absente')" method="post" class="formulaire" action="#">
 
 						<div class="element_form">
-							<label for="nom">Nom :</label>
+							<label for="nom">Nom </label>
 							<input type="text" id="nom" class="input_text"/>
 						</div>
 
 						<div class="element_form">
-							<label for="prenom">Email :</label>
+							<label for="prenom">Email </label>
 							<input type="email" id="nom" class="input_text" />
 						</div>
 
+						
+							<label for="message" class="label">Message</label>
 						<div class="element_form">
-							<label for="message" class="label">Message :</label>
 							<textarea id="message" class="case_message" /></textarea>						
+						</div>
+
+						<div class="element_form">
+							<input type="submit" class="valid_form" value="Envoyer" /></textarea>						
 						</div>
 					</form>
 				</div>

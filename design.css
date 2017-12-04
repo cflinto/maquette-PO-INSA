@@ -53,6 +53,7 @@
 .main_menu li:hover
 {
 	color : white;
+	transition-duration : 0.5s;
 	opacity : 1;
 	border : solid 1px white;
 	border-radius: 10px;
@@ -159,6 +160,23 @@ margin :0px;
 	
 }
 
+
+/********* PRESENTATION ****************/
+
+.presentation {
+	height : 600px;
+	background-image: url("./tweed.png");
+	background-repeat: repeat;
+}
+
+.presentation h2 {
+	font-size : 40px;
+	margin:15px;
+	font-family: "LatoHairline";
+}
+
+
+/******************* INSA *******************/
 .INSA {
 	background-image: url("./footer_lodyas.png");
 	background-repeat: repeat;
@@ -176,11 +194,19 @@ margin :0px;
 	font-family: "LatoHairline";
 }
 
+
+/********** PROGRAMME *********************/
 .programme {
 	border-top : solid 20px rgba(0, 0, 0, 0.3);	
 	background-image: url("./intersection.png");
 	background-repeat: repeat;
 	height : 700px;
+}
+
+.programme h2 {
+	font-size : 40px;
+	margin:15px;
+	font-family: "LatoHairline";
 }
 
 .programme a {
@@ -220,10 +246,33 @@ margin :0px;
 	display : flex;
 	flex-direction : column;	
 	text-align : center;
-	background-color : grey;
+	background-color : white;
 	padding : 20px;
 	width : 70%;	
+	font-size : 20px;
+	margin-top : 15px;
 
+}
+
+.formulaire textarea {
+	width : 70%;
+	height : 200px;
+	resize : none;
+}
+
+.valid_form {
+	font-family: "LatoLight";
+	width : 20%;
+	background-color : white;
+	font-size : 20px;
+	border : 1px solid grey;
+	border-radius : 15px;
+	padding : 4px;
+}
+
+.valid_form:hover {
+	transition-duration : 0.5s;
+	border : 1px solid black;
 }
 
 .input_text {
@@ -289,7 +338,7 @@ margin :0px;
     position: relative;
 }
 
-#slider-image-1:target ~ .image-holder
+/*#slider-image-1:target ~ .image-holder
 {
     left: 0px;
 }
@@ -302,7 +351,7 @@ margin :0px;
 #slider-image-3:target ~ .image-holder
 {
     left: -1600px;
-}
+}*/
 
 .button-holder
 {
@@ -317,6 +366,11 @@ margin :0px;
     width: 10px;
     border-radius: 5px;
     background-color: brown;
+}
+
+.slider-change:hover
+{
+    cursor: pointer;
 }
 
 /***********************************/
