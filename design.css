@@ -164,10 +164,13 @@ margin :0px;
 /********* PRESENTATION ****************/
 
 .presentation {
-	height : 300px;
+
 	background-image: url("./asanoha-400px.png");
-	border-bottom : solid 50px rgba(0, 0, 0, 0.4);
+	border-bottom : solid 3px rgba(0, 0, 0);
 	background-repeat: repeat;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 100px;
 }
 
 .presentation h2 {
@@ -179,20 +182,32 @@ margin :0px;
 
 .presentation p {
 	font-family: "AllerLight";
-	margin : 10px;
-	font-size : 17px;
+	margin-left : 25px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+
+.video {
+	display: flex;
+	justify-content: center;
+	align-items: middle;
+	width : 100%;
+	margin-top: 50px;
 }
 
 /******************* INSA *******************/
 .INSA {
 	background-image: url("./footer_lodyas.png");
 	background-repeat: repeat;
-	height : 1200px;
 	padding : 10px;
 	padding-left: 20px;
 	color : #cccccc;
-	font-family: "AllerLight"
-	
+	font-family: "AllerLight";
+	padding-right: 70px;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 100px;
 }
 
 .INSA h2 {
@@ -201,6 +216,25 @@ margin :0px;
 	font-family: "LatoHairline";
 }
 
+.INSA h3 {
+	font-size : 25px;
+	margin-top:70px;
+	font-family: "LatoBlack";
+}
+
+.INSA p {
+	margin-left: 30px;
+}
+
+.INSA li {
+	margin-left: 40px;
+}
+
+.textINSA {
+	text-align: justify;
+    text-justify: inter-word;
+
+}
 
 /********** PROGRAMME *********************/
 .programme {
@@ -210,7 +244,13 @@ margin :0px;
 	background-image: url("./asanoha-400px.png");
 
 	background-repeat: repeat;
-	height : 700px;
+	padding-right: 70px;
+
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 100px;
+	text-align: justify;
+    text-justify: inter-word;
 }
 
 .programme h2 {
@@ -229,7 +269,7 @@ margin :0px;
 
 .programme p {
 	font-family: "AllerLight";
-	margin : 10px;
+	margin-left: 25px;
 }
 
 
@@ -237,7 +277,9 @@ margin :0px;
 .acces {
 	background-image: url("./shattered.png");
 	background-repeat: repeat;
-	height : 700px;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 100px;
 }
 
 
@@ -248,17 +290,68 @@ margin :0px;
 	font-family: "LatoHairline";
 }
 
-#map {
-
-	width : 60%;
-	height : 70%;
-	margin : auto;
+.acces_adresse {
+	margin-left: 50px;
+	margin-bottom: 30px;
 }
+
+.acces_adresse p {
+	font-family: "LatoBlack";
+	font-size: 20px;
+	margin-top : 0px;
+	margin-bottom: 0px;
+	}
+
+.move_container {
+	width : 95%;
+	display: grid;
+	grid-template-columns: 500px;
+	grid-template-areas: "a b";
+	padding-left:  50px;
+	box-sizing: border-box;
+
+}
+
+#map {
+	grid-area: a;
+	width : 100%;
+	height : 100%;
+	margin : auto;
+
+
+
+}
+
+.transport {
+	grid-area: b;
+	padding-right: 20px;
+	text-align: justify;
+    text-justify: inter-word;
+
+}
+
+.transport h4 {
+	font-family: "LatoBlack";
+	margin-bottom: 0px;
+	margin-left: 50px;
+	font-size: 20px;
+}
+
+.transport p {
+	font-family: "AllerLight";
+	margin-bottom: 0px;
+	margin-left: 70px;
+	margin-top: 0px;
+	hyphens: auto;
+}
+
 
 /************** CONTACT *********************/
 .contact {
 	background-color : white;
-	height : 700px;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 100px;
 }
 
 .contact h2 {
@@ -346,7 +439,7 @@ margin :0px;
     background-color: yellow;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0px;
+    margin-top: 20px;
     text-align: center;
     overflow: hidden;
 }
@@ -461,6 +554,24 @@ margin :0px;
 	{
 		flex : 0;	
 	}
+
+
+	.slider-holder
+	{
+		width : 0px;
+		height: 0px;
+	}
+
+	.move_container {
+	width : 100%;
+	display: grid;
+	grid-template-rows: 90%;
+	grid-template-columns: 100%;
+	grid-template-areas: "a""b";
+	padding-left:  50px;
+	box-sizing: border-box;
+
+}
 }
 
 

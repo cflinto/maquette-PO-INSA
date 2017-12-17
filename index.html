@@ -32,8 +32,13 @@
 			<!-------------------- PRESENTATION ---------------------------------->
 			<div class = "presentation" id="presentation">
 				<h2>Présentation</h2>
-				<p>L'INSA Toulouse ouvre ses portes le samedi 27 janvier 2018 de 9h à 16h en continu.</p>
-				<p>Visites de départements, logement étudiants, campus. Rencontres avec des étudiants, enseignants des 8 spécialités, service scolarité etc...</p>				
+				<div class="introPres">
+					<p>L'INSA Toulouse ouvre ses portes le <b>samedi 27 janvier 2018</b> de 9h à 16h en continu.</p>
+					<p><b>Visites de départements</b>, <b>logement étudiants</b>, <b>campus</b>. <b>Rencontres avec des étudiants</b>, <b>enseignants des 8 spécialités</b>, service scolarité etc...</p>
+				</div>		
+				<div class="video">
+					<video width="560" height="315" poster="2.jpg" controls><source src="videoInsa.mp4" type="video/mp4"></video>
+				</div>	
 					
 			</div>
 
@@ -41,55 +46,88 @@
 			<!-------------------- PROGRAMME ---------------------------------->
 			<div class="programme" id ="programme">
 				<h2>Planning de la journée</h2>
-				<p>Le planning de cette journée sera très chargé ! bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
-				<a href="./programme2017_web.pdf">Télécharger le planning</a>
-				<p>Venez nombreux ! bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
-				Rencontres avec des enseignants, des personnels et des élèves.
 
- 
+				<div class="textprogramme">
+					<p>Le planning de cette journée sera très chargé ! bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
+					<a href="./programme2017_web.pdf">Télécharger le planning</a>
+					<p>Venez nombreux ! bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
+					<p>Rencontres avec des enseignants, des personnels et des élèves.
 
-					Stands d’information sur : le recrutement et la scolarité
+	 
 
-					La vie à l’INSA (hébergement, restauration…)
-					Les relations internationales
-					Le métier d’ingénieur et les débouchés avec INSA Alumni Toulouse (IAT)
-					L’accueil des étudiants en situation de handicap
-					La vie associative
+						Stands d’information sur : le recrutement et la scolarité
 
-					Présentation des activités des élèves : Amicale des élèves
+						La vie à l’INSA (hébergement, restauration…)
+						Les relations internationales
+						Le métier d’ingénieur et les débouchés avec INSA Alumni Toulouse (IAT)
+						L’accueil des étudiants en situation de handicap
+						La vie associative
+
+						Présentation des activités des élèves : Amicale des élèves
 
 
 
-					Visite des lieux de vie :
+						Visite des lieux de vie :
 
-					La cafétéria
-					Une chambre en résidence 1
-					CROUS-INSA
-					Des logements CROUS
-					Des logements Promologis
-					Locaux associatifs des élèves	
+						La cafétéria
+						Une chambre en résidence 1
+						CROUS-INSA
+						Des logements CROUS
+						Des logements Promologis
+						Locaux associatifs des élèves</p>
+				</div>
 			</div>
 			
 
-			<!-------------------- ACCES --------------------------------------->
+			<!-------------------- ACCES -------------------------------------->
 			<div class="acces" id ="acces">
 				<h2>Acces</h2>
-				<div id="map">
-					
-					<script>
-						function initMap() {
-						var insa = {lat: 43.5700699, lng: 1.467344};
-						var map = new google.maps.Map(document.getElementById('map'), {
-						  zoom:14,
-						  center: insa
-						});
-						var marker = new google.maps.Marker({
-						  position: insa,
-						  map: map
-						});
-						}
-					</script>
-		
+
+				<div class="acces_adresse">
+					<p>INSA Toulouse</p>
+					<p>135 avenue de Rangueil - 31077 Toulouse cedex 4</p>
+					<p>Tél : 05 61 55 95 13 - Fax : 05 61 55 95 00</p>
+				</div>
+
+				<div class = "move_container">
+					<div id="map">
+						
+						
+						<script>
+							function initMap() {
+							var insa = {lat: 43.5700699, lng: 1.467344};
+							var map = new google.maps.Map(document.getElementById('map'), {
+							  zoom:14,
+							  center: insa
+							});
+							var marker = new google.maps.Marker({
+							  position: insa,
+							  map: map
+							});
+							}
+						</script>
+						<p>test</p>
+			
+					</div>
+
+					<div class="transport">
+						<h4 style="margin-top: 0px"> En voiture  </h4>
+							<p>    Prendre la rocade ouest direction Montpellier ou Bordeaux, selon votre sens d'arrivée. <b>Sortie n°20 "Complexe scientifique de Rangueil"</b></p>
+						<h4> En bus  </h4>
+							<p> L'INSA Toulouse est desservi par : <b>la ligne 23 et 80</b> : arrêt INSA / <b>la ligne 78</b> : arrêt IUT Rangueil/ <b>la ligne 44</b> : arrêt Faculté de Pharmacie</p>	
+						<h4> En métro</h4>
+							<p>Prendre la <b>ligne B</b> : arrêt <b>Rangueil</b> ou <b>Faculté de pharmacie</b></p>
+
+						<h4>En train</h4>
+							<p>Depuis la gare Matabiau, prendre le métro, ligne A, arrêt <b>Jean Jaurès</b></p>
+							<p>A Jean Jaurès, prendre le métro, ligne B, arrêts <b>Rangueil</b> ou <b>Faculté de Pharmacie</b>.</p>
+
+
+						<h4>En avion</h4>
+							<p>Prendre la navette <b>"Centre Ville - Aéroport"</b></p>
+							<p>Arrêt : <b>Allées Jean Jaurès</b></p>
+							<p>Depuis Jean Jaurès, prendre le métro <b>Ligne B (direction Ramonville)</b> : arrêts <b>Faculté de Pharmacie</b> ou <b>Rangueil</b></p>
+					</div>
 				</div>
 			</div>
 			
@@ -113,35 +151,36 @@
                         <span id="slider-change-3" class="slider-change" onclick="set_image(3);"></span>
                     </div>
                 </div>
+	                <div class="textINSA">
+						<h3>Un cursus ingénieur en phase avec son temps</h3>
 
-				<h3>Un cursus ingénieur en phase avec son temps</h3>
+						<p>L’INSA Toulouse a travaillé en étroite col­laboration avec des acteurs du monde industriel pour proposer un modèle de formation en adéquation avec les attentes des entreprises.</p>
 
-				<p>L’INSA Toulouse a travaillé en étroite col­laboration avec des acteurs du monde industriel pour proposer un modèle de formation en adéquation avec les attentes des entreprises.</p>
+						 
 
-				 
+						<p>Cela a permis de confirmer que les ingénieurs INSA :
 
-				<p>Cela a permis de confirmer que les ingénieurs INSA :
+							<ul>
+								<li>ont une formation scientifique solide et pratique</li>
+								<li>sont aptes à communiquer</li>
+								<li>reçoivent des enseignements à l’interface de plusieurs disciplines</li>
+								<li>travaillent aisément en équipe.</li>
+							</ul>
+						</p>
 
-					<ul>
-						<li type="circle">ont une formation scientifique solide et pratique</li>
-						<li>sont aptes à communiquer</li>
-						<li>reçoivent des enseignements à l’interface de plusieurs disciplines</li>
-						<li>travaillent aisément en équipe.</li>
-					</ul>
-				</p>
+						 
 
-				 
+						<p>L’offre de formation s’organisera autour de 8 spécialités et 8 Parcours Transversaux Pluridisciplinaires (PTP).</p>
 
-				<p>L’offre de formation s’organisera autour de 8 spécialités et 8 Parcours Transversaux Pluridisciplinaires (PTP).</p>
+						 
+						<h3>Une pédagogie active</h3>
 
-				 
-				<h3>Une pédagogie active</h3>
+						<p>L’étudiant, véritable acteur de sa formation, passe une part importante de sa scolarité à travailler sur des projets en vraie grandeur.</p>
 
-				<p>L’étudiant, véritable acteur de sa formation, passe une part importante de sa scolarité à travailler sur des projets en vraie grandeur.</p>
+						<p>La pédagogie par problème et par projet est une pédagogie centrée sur l’élève qui stimule son envie d’apprendre et son autonomie. Le projet constitue la colonne vertébrale du cur­sus : au lieu d’assister à des cours puis de passer des examens pour vérifier leurs ac­quis, les étudiants consacrent dès la première année une part croissante de leur temps à travailler sur des problèmes et projets com­plexes élaborés par les enseignants, menés en équipe, avec le soutien d’un tuteur.</p>
 
-				<p>La pédagogie par problème et par projet est une pédagogie centrée sur l’élève qui stimule son envie d’apprendre et son autonomie. Le projet constitue la colonne vertébrale du cur­sus : au lieu d’assister à des cours puis de passer des examens pour vérifier leurs ac­quis, les étudiants consacrent dès la première année une part croissante de leur temps à travailler sur des problèmes et projets com­plexes élaborés par les enseignants, menés en équipe, avec le soutien d’un tuteur.</p>
-
-				<p>Dès le début de sa scolarité, l’étudiant est également accompagné pour construire pas à pas un Parcours Professionnel Individualisé (PPI), en cohérence avec ses centres d’intérêt et ses capacités.</p>
+						<p>Dès le début de sa scolarité, l’étudiant est également accompagné pour construire pas à pas un Parcours Professionnel Individualisé (PPI), en cohérence avec ses centres d’intérêt et ses capacités.</p>
+					</div>
 			</div>
 
 
