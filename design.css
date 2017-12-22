@@ -6,7 +6,7 @@
 	display : flex;
 	flex-direction : column;	
 	margin: 0 auto;
-	box-shadow: 1px 1px 12px #555;
+	
 	padding-top : 10px;
 	background-image: url("./asanoha-400px.png");
 	background-repeat: repeat;
@@ -103,6 +103,7 @@
 .left_gradient
 {
 
+	box-shadow: inset -5px 0px 10px #555;
 	flex : 0.09;
 
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f2f2+0,dddddd+100 */
@@ -115,7 +116,7 @@
 
 .right_gradient
 {
-
+	box-shadow: inset 5px 0px 10px #555;
 	flex : 0.09;
 
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dddddd+0,f2f2f2+100 */
