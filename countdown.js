@@ -43,7 +43,7 @@ window.setTimeout(offsetAnchor, 0);
 
 
 
-var image_num = 3;
+var image_num = 4;
 var current_image = 1;
 var last_image_change = 0;
 
@@ -91,7 +91,7 @@ function set_image(num)
     var elem = document.getElementById('image-holder');
     current_image = num;
     last_image_change = 0;
-    if(num == 1)
+    /*if(num == 1)
     {
         elem.setAttribute('style', 'left:0px;');
     }
@@ -102,7 +102,9 @@ function set_image(num)
     else if(num == 3)
     {
         elem.setAttribute('style', 'left:-1600px;');
-    }
+    }*/
+	
+	elem.setAttribute('style', 'left: -'+(800*(num-1))+'px;');
 }
 
 set_image(1);
