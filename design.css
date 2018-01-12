@@ -264,7 +264,7 @@ margin :0px;
 	text-decoration: none;
 	color: #444444;
 	font-size: 3em;
-	margin: 100px;
+	margin: 5%;
 	font-family: "LatoHairline";
 }
 
@@ -570,6 +570,10 @@ margin :0px;
 	grid-template-areas: "a a" "b b";
 	grid-gap : 20px;
 
+	}
+
+	.formulaire textarea {
+		width : 100%;
 	}
 }
 
